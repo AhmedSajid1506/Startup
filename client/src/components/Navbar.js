@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import userIcon from "../img/user.png";
 import { useUserContext } from "../context/userContext";
 
 const Navbar = () => {
@@ -32,7 +31,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav className="navbar navbar-expand-lg sticky-top">
       <div className="container-fluid">
         <a className="navbar-brand m-0" href="/">
 	  StartUp
@@ -54,7 +53,7 @@ const Navbar = () => {
         >
           <div className="offcanvas-header">
             <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-              Offcanvas
+              StartUp
             </h5>
             <button
               type="button"
@@ -98,19 +97,12 @@ const Navbar = () => {
                 </div>
               ) : (
                 <div>
-                  <img
-                    src={userIcon}
-                    className="userIcon"
-                    alt="userIcon"
-                    onClick={userIconToggler}
-                  />
+                  <i class="fa-regular fa-circle-user fs-2 cursor" alt="userIcon" onClick={userIconToggler}></i>
                   <div className="userDiv p-3 d-none" ref={userDiv}>
                     <div className="d-flex align-items-center fs-14">
-                      <img
-                        src={userIcon}
-                        className="userIcon me-2"
-                        alt="userIcon"
-                      />
+                      <i
+                        className="fa-regular fa-circle-user fs-2 me-2"
+                        alt="userIcon"></i>
                       <div>
                         <p>{user.first_name + " " + user.last_name}</p>
                         <p>{user.email}</p>

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useUserContext } from "../context/userContext";
+import "../css/nav.css";
 
 const Navbar = () => {
   const [showDiv, setShowDiv] = useState(false);
@@ -17,10 +18,10 @@ const Navbar = () => {
   const userIconToggler = () => {
     if (showDiv === false) {
       setShowDiv(true);
-      userDiv.current.classList.remove("d-none");
+      userDiv.current.style.display = "block";
     } else {
       setShowDiv(false);
-      userDiv.current.classList.add("d-none");
+      userDiv.current.style.display = "none";
     }
   };
 
@@ -31,7 +32,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg sticky-top">
+    <nav className="navbar navbar-expand-lg bg-white sticky-top">
       <div className="container-fluid">
         <a className="navbar-brand m-0" href="/">
 	  StartUp
@@ -46,7 +47,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          className="offcanvas offcanvas-end bg-dark"
+          className="offcanvas offcanvas-end bg-white"
           tabIndex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
@@ -80,25 +81,25 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
-            {/* <img src={`server/uploads/profImg/profImg_1677612320068_343951030.png`} alt="Profile" /> */}
+            {/* <hr /> */}
             <div className="d-flex justify-content-between align-items-center me-2">
               {!localStorage.getItem("token") ? (
                 <div>
                   <NavLink to="./login">
-                    <button type="button" className="btn-color me-3 px-4 py-2">
+                    <button type="button" className="login-btn me-3 px-4 py-2">
                       Login
                     </button>
                   </NavLink>
                   <NavLink to="./signup">
-                    <button type="button" className="btn-color px-4 py-2">
+                    <button type="button" className="signup-btn px-4 py-2">
                       Signup
                     </button>
                   </NavLink>
                 </div>
               ) : (
                 <div>
-                  <i class="fa-regular fa-circle-user fs-2 cursor" alt="userIcon" onClick={userIconToggler}></i>
-                  <div className="userDiv p-3 d-none" ref={userDiv}>
+                  <i className="fa-regular fa-circle-user fs-2 cursor" alt="userIcon" onClick={userIconToggler}></i>
+                  <div className="userDiv p-3" ref={userDiv}>
                     <div className="d-flex align-items-center fs-14">
                       <i
                         className="fa-regular fa-circle-user fs-2 me-2"
@@ -111,7 +112,7 @@ const Navbar = () => {
                     <hr />
                     <div className="fs-14">
                       <div className="d-flex align-items-center">
-                        <i className="fa-solid fa-gear me-3 icon"></i>
+                        <i className="fa-solid fa-gear me-3"></i>
                         <p>Profile Settings</p>
                       </div>
                     </div>

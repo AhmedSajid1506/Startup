@@ -29,7 +29,7 @@
 .inputBox input{
   width: 100%;
   background: transparent;
-  color: #fff;
+  color: #000;
   border: none;
   outline: none;
   box-shadow: none;
@@ -41,7 +41,7 @@
 .inputBox span{
   position: absolute;
   left: 0;
-  color: #fff;
+  color: #000;
   padding: 10px 0 5px;
   pointer-events: none;
   letter-spacing: .1em;
@@ -50,7 +50,7 @@
 
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span{
-  color: #fff;
+  color: #000;
   transform: translateY(-16px);
   font-size: .65em;
 }
@@ -61,7 +61,7 @@
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: #fff;
+  background: #000;
   overflow: hidden;
 }
 
@@ -71,7 +71,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #ff1b69, #ff0, #2196f3, #9c27b0, #ff1b69);
+  background: linear-gradient(90deg, #01b636, #007423, #00ff4c, #007423, #01b636);
   animation: inputAnime 5s linear infinite;
 }
 

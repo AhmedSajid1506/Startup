@@ -1,0 +1,82 @@
+.navbar-brand img{
+  width: 190px;
+}
+
+.nav-link{
+  color: #000;
+}
+
+.nav-link:hover{
+  color: #01b636;
+}
+
+.userIcon{
+  height: 35px;
+  cursor: pointer;
+}
+
+.userDiv{
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.userDiv::before{
+  content: '';
+  position: absolute;
+  top: -7px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  transform: rotate(45deg);
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.fa-gear{
+  font-size: 18px;
+}
+
+.active{
+  color: #01b636 !important;
+  font-weight: bold;
+}
+
+.login-btn, .signup-btn{
+  background: transparent;
+  border: 2px solid #01b636;
+  border-radius: 50px;
+  transition: .3s;
+}
+
+.signup-btn{
+  color: #fff;
+  background: #01b636;
+  border: 2px solid #01b636;
+}
+
+.login-btn:hover, .signup-btn:hover{
+  transform: scale(1.075);
+  color: #fff;
+  background: #01b636;
+}
+
+@media screen and (max-width: 992px) {
+  .fa-circle-user.cursor{
+    display: none;
+  }
+
+  .userDiv{
+    display: block;
+    position: relative;
+    border-radius: 0px;
+  }
+
+  .userDiv::before{
+    display: none;
+  }
+}

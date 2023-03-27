@@ -34,9 +34,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-white sticky-top">
       <div className="container-fluid">
-        <a className="navbar-brand m-0" href="/">
-	  StartUp
-        </a>
+        <a className="navbar-brand m-0" href="/">All Tasker</a>
         <button
           className="navbar-toggler"
           type="button"

@@ -41,7 +41,7 @@ const Signup = (props) => {
     } else if (password !== confirmPassword) {
       showAlert("Passwords do not match", "error");
     } else {
-      const response = await fetch("http://localhost:6001/api/v1/auth/signup", {
+      const response = await fetch("https://tricky-mite-pocket.cyclic.app/api/v1/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

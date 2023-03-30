@@ -67,7 +67,7 @@ const Signup = (props) => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="form-container container mt-5">
       <div className="row justify-content-center mx-1 mx-md-0 py-4">
         <form className="col-md-6 p-0 text-center" encType="multipart/form-data">
           <div className="d-flex flex-wrap justify-content-between mt-5">

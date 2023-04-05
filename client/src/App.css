@@ -54,9 +54,11 @@ a{
   color: #fff;
   border-radius: 50px;
   transition: .3s;
+  box-shadow: 5px 5px 10px #01b636;
 }
 
 .btn-color:hover{
+  
   transform: scale(1.05);
 }
 

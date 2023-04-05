@@ -1,1 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+header{
+  height: 100vh;
+}
+
+.bg-header{
+  background: url(../img/bgHeader.png);
+}

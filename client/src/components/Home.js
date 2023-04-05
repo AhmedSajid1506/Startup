@@ -7,13 +7,20 @@ const Home = (props) => {
   useEffect(() => {
     props.setShowNav(true);
   });
-  
 
   return (
-    <div className="container">
-      <Header />
-      <Services />
-    </div>
+    <>
+      <div className="bg-header">
+        <div className="container">
+            <Header />
+        </div>
+      </div>
+      <div className="bg-light">
+        <div class="container">
+          <Services />
+        </div>
+      </div>
+    </>
   );
 };
 

@@ -1,9 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-header{
+header {
   height: 100vh;
 }
 
-.bg-header{
+.bg-header {
   background: url(../img/bgHeader.png);
+}
+
+/* d-flex flex-column align-items-center justify-content-center p-md-5 p-3 text-white text-center */
+.carousal0,
+.carousal1,
+.carousal2,
+.carousal3,
+.carousal4,
+.carousal5,
+.carousal6 {
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.carousal0 {
+  background: url(../img/bgHeader.png);
+}
+
+.carousal1 {
+  background: url(../img/bgHeader.png);
+}
+
+.carousal2 {
+  background: url(../img/bgHeader.png);
+}
+
+.carousal3 {
+  background: url(../img/bgHeader.png);
+}
+
+.carousal4 {
+  background: url(../img/bgHeader.png);
+}
+
+.carousal5 {
+  background: url(../img/bgHeader.png);
+}
+
+.carousal6 {
+  background: url(../img/bgHeader.png);
+}
+
+.job-items::before {
+  font-family: 'FontAwesome';
+  content: '\f00c';
+  margin: 0 5px 0 -15px;
 }

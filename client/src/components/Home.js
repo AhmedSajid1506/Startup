@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "../css/home.css";
 import Header from "./home/Header";
-import Services from "./home/Services";
 import About from "./home/About";
+import WhatWeDo from "./home/WhatWeDo";
 
 const Home = (props) => {
   useEffect(() => {
@@ -11,15 +11,11 @@ const Home = (props) => {
 
   return (
     <>
-      <div className="">
-        {/* <div className="container"> */}
-            <Header />
-        {/* </div> */}
-      </div>
+      <Header />
       <div className="bg-light">
         <div class="container">
           <About />
-          <Services />
+          <WhatWeDo />
         </div>
       </div>
     </>

@@ -1,18 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.c47335ad.css",
-    "main.js": "/static/js/main.d354d3cd.js",
+    "main.css": "/static/css/main.23838fbc.css",
+    "main.js": "/static/js/main.c1b13a5a.js",
     "static/js/787.d07b30b9.chunk.js": "/static/js/787.d07b30b9.chunk.js",
-    "static/media/bgHeader.png": "/static/media/bgHeader.e96078bc75afb6a61271.png",
-    "static/media/digital-marketing.png": "/static/media/digital-marketing.ac263980aa17120104f6.png",
-    "static/media/service.png": "/static/media/service.0d832adaf8455b8ae694.png",
+    "static/media/carousel3.jpg": "/static/media/carousel3.800e3caf880b4b02711e.jpg",
+    "static/media/carousel2.jpg": "/static/media/carousel2.52bcbdcd26fa2cd130a3.jpg",
+    "static/media/carousel0.jpg": "/static/media/carousel0.ba5cd766ad096dcf4991.jpg",
+    "static/media/carousel6.jpg": "/static/media/carousel6.76cedbac2237b22913d6.jpg",
+    "static/media/carousel1.jpg": "/static/media/carousel1.9bf38eb23b12c3d3550e.jpg",
+    "static/media/carousel4.jpg": "/static/media/carousel4.eeb8e981dd5697ccff83.jpg",
+    "static/media/carousel5.jpg": "/static/media/carousel5.a0d48c73fdf3d30c91e0.jpg",
+    "static/media/web-dev.png": "/static/media/web-dev.ec3e7965a3628bd8f488.png",
     "index.html": "/index.html",
-    "main.c47335ad.css.map": "/static/css/main.c47335ad.css.map",
-    "main.d354d3cd.js.map": "/static/js/main.d354d3cd.js.map",
+    "main.23838fbc.css.map": "/static/css/main.23838fbc.css.map",
+    "main.c1b13a5a.js.map": "/static/js/main.c1b13a5a.js.map",
     "787.d07b30b9.chunk.js.map": "/static/js/787.d07b30b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c47335ad.css",
-    "static/js/main.d354d3cd.js"
+    "static/css/main.23838fbc.css",
+    "static/js/main.c1b13a5a.js"
   ]
 }

@@ -28,16 +28,16 @@ const Header = () => {
         <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="7500">
             <div className="carousal0 p-5 text-white">
-              <h1 className="display-5 f2 fw-bold">All <span className="f-primary">Tasker</span></h1>
+              <h1 className="display-5 f2 fw-bold">All <span className="header-title">Tasker</span></h1>
               <h4 className="f2">
                 From Small Tasks to Big Projects,{" "}
-                <span className="f2 f-primary fw-bold"> All Tasker</span> has got you
+                <span className="f2 header-title fw-bold"> All Tasker</span> has got you
                 covered.
               </h4>
               <h1>
                 We can do <span ref={br}></span>
                 <Typed
-                  className="f-primary fw-bold"
+                  className="header-title fw-bold"
                   strings={textLines}
                   typeSpeed={100}
                   backSpeed={60}
@@ -54,7 +54,7 @@ const Header = () => {
               <h1 className="display-5 f2 fw-bold">Web Development</h1>
               <h4 className="f2">
               Empowering your digital presence with expert
-                <span className="f2 f-primary fw-bold"> Web Development.</span>
+                <span className="f2 header-title fw-bold"> Web Development.</span>
               </h4>
               <button type="button" className="col-md-2 mt-2 btn-color py-2 px-4">
                 Order Now
@@ -66,7 +66,7 @@ const Header = () => {
               <h1 className="display-5 f2 fw-bold">Digital Marketing</h1>
               <h4 className="f2">
               Boost Your Online Presence with our Expert
-                <span className="f2 f-primary fw-bold"> Digital Marketing </span>Solutions.
+                <span className="f2 header-title fw-bold"> Digital Marketing </span>Solutions.
               </h4>
               <button type="button" className="col-md-2 mt-2 btn-color py-2 px-4">
                 Order Now
@@ -78,7 +78,7 @@ const Header = () => {
               <h1 className="display-5 f2 fw-bold">Graphic Designing</h1>
               <h4 className="f2">
               Bringing your vision to life through
-                <span className="f2 f-primary fw-bold"> Captivating Designs.</span>
+                <span className="f2 header-title fw-bold"> Captivating Designs.</span>
               </h4>
               <button type="button" className="col-md-2 mt-2 btn-color py-2 px-4">
                 Order Now
@@ -90,7 +90,7 @@ const Header = () => {
               <h1 className="display-5 f2 fw-bold">Video Editing</h1>
               <h4 className="f2">
               Transform your raw footage into a cinematic masterpiece with our
-                <span className="f2 f-primary fw-bold"> Expert Video Editing</span> service.
+                <span className="f2 header-title fw-bold"> Expert Video Editing</span> service.
               </h4>
               <button type="button" className="col-md-2 mt-2 btn-color py-2 px-4">
                 Order Now
@@ -102,7 +102,7 @@ const Header = () => {
               <h1 className="display-5 f2 fw-bold">Content Writing</h1>
               <h4 className="f2">
               Crafting words that
-                <span className="f2 f-primary fw-bold"> inspire, engage </span>and elevate your brand.
+                <span className="f2 header-title fw-bold"> inspire, engage </span>and elevate your brand.
               </h4>
               <button type="button" className="col-md-2 mt-2 btn-color py-2 px-4">
                 Order Now
@@ -114,7 +114,7 @@ const Header = () => {
               <h1 className="display-5 f2 fw-bold">3D Modeling</h1>
               <h4 className="f2">
               Bringing your ideas to life with precision and creativity through
-                <span className="f2 f-primary fw-bold"> 3D Modeling.</span>
+                <span className="f2 header-title fw-bold"> 3D Modeling.</span>
               </h4>
               <button type="button" className="col-md-2 mt-2 btn-color py-2 px-4">
                 Order Now
@@ -135,7 +135,7 @@ const Header = () => {
         <h1 className="display-5 f2 fw-normal">All Tasker</h1>
         <h4 className="f2">
           From Small Tasks to Big Projects,{" "}
-          <span className="f2 f-primary fw-bold"> All Tasker</span> has got you
+          <span className="f2 header-title fw-bold"> All Tasker</span> has got you
           covered.
         </h4>
         <h1>

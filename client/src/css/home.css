@@ -4,11 +4,6 @@ header {
   height: 100vh;
 }
 
-.bg-header {
-  background: url(../img/bgHeader.png);
-}
-
-/* d-flex flex-column align-items-center justify-content-center p-md-5 p-3 text-white text-center */
 .carousal0,
 .carousal1,
 .carousal2,
@@ -25,35 +20,52 @@ header {
 }
 
 .carousal0 {
-  background: url(../img/bgHeader.png);
+  background: url(../img/carousel0.jpg) no-repeat center;
 }
 
 .carousal1 {
-  background: url(../img/bgHeader.png);
+  background: url(../img/carousel1.jpg) no-repeat center;
+  position: relative;
+}
+
+.carousal1::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #070d47;
+  z-index: -1;
 }
 
 .carousal2 {
-  background: url(../img/bgHeader.png);
+  background: url(../img/carousel2.jpg);
 }
 
 .carousal3 {
-  background: url(../img/bgHeader.png);
+  background: url(../img/carousel3.jpg);
 }
 
 .carousal4 {
-  background: url(../img/bgHeader.png);
+  background: url(../img/carousel4.jpg);
 }
 
 .carousal5 {
-  background: url(../img/bgHeader.png);
+  background: url(../img/carousel5.jpg);
 }
 
 .carousal6 {
-  background: url(../img/bgHeader.png);
+  background: url(../img/carousel6.jpg);
 }
 
 .job-items::before {
   font-family: 'FontAwesome';
   content: '\f00c';
   margin: 0 5px 0 -15px;
+  color: #01b636;
+}
+
+.header-title{
+  color: #00ff4c;
 }

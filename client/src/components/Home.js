@@ -13,7 +13,7 @@ const Home = (props) => {
     <>
       <Header />
       <div className="bg-light">
-        <div class="container">
+        <div className="container pt-3">
           <About />
           <WhatWeDo />
         </div>

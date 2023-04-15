@@ -31,7 +31,7 @@ const Login = (props) => {
     } else if (!password.length) {
       showAlert("Please Enter Your Password", "error");
     } else {
-      const response = await fetch("https://tricky-mite-pocket.cyclic.app/api/v1/auth/login", {
+      const response = await fetch("https://api.alltasker.co/api/v1/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

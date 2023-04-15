@@ -8,7 +8,7 @@ const UserProvider = ({ children }) => {
   const [user, setUser] = useState(userInitial);
 
   const getUser = async () => {
-    const res = await fetch("https://tricky-mite-pocket.cyclic.app/api/v1/auth/getuser", {
+    const res = await fetch("https://api.alltasker.co/api/v1/auth/getuser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

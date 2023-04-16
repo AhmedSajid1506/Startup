@@ -13,7 +13,7 @@ const Navbar = () => {
       getUser();
     }
   })
-  
+
 
   const userDiv = useRef();
   const userIconToggler = () => {
@@ -116,13 +116,13 @@ const Navbar = () => {
                       </div>
                     </div>
                     <hr />
-                      <button
-                        type="button"
-                        className="btn-color px-4 py-2 col-12"
-                        onClick={handleLogout}
-                      >
-                        Logout
-                      </button>
+                    <button
+                      type="button"
+                      className="btn-color px-4 py-2 col-12"
+                      onClick={handleLogout}
+                    >
+                      Logout
+                    </button>
                   </div>
                 </div>
               )}

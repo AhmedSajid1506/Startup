@@ -9,13 +9,19 @@ import Admin from "./components/Admin";
 import AddProduct from "./components/AddProduct";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import InBuildPopup from "./components/InBuildPopup";
 
 function App() {
   const [showNav, setShowNav] = useState(true);
+  useEffect(() => {
+    
+  })
+  
   return (
     <BrowserRouter>
         {showNav && <Navbar />}
+        <InBuildPopup />
       <Routes>
         <Route path="/" element={<Home setShowNav={setShowNav} />} />
         <Route path="/about" element={<About setShowNav={setShowNav} />} />

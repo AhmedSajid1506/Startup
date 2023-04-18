@@ -1,6 +1,5 @@
 import React from "react";
-// import servicesImg from "../../img/service.png";
-import webDev from "../../img/web-dev.png";
+import webDev from "../img/web-dev.png";
 
 const WhatWeDo = () => {
   return (

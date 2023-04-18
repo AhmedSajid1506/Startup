@@ -1,14 +1,14 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import FourOFour from "./components/FourOFour";
-import Admin from "./components/Admin";
-import AddProduct from "./components/AddProduct";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import FourOFour from "./pages/FourOFour";
+import Admin from "./pages/Admin";
+import AddProduct from "./pages/AddProduct";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 import { useState, useEffect } from "react";
 import InBuildPopup from "./components/InBuildPopup";
 

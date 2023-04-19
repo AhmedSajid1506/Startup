@@ -47,6 +47,11 @@ a{
   color: #000;
 }
 
+.bg-main{
+  background: #01b636;
+  color: #fff;
+}
+
 .btn-color{
   background: #01b636;
   border: 0;

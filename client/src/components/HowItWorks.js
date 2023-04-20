@@ -9,7 +9,7 @@ const HowItWorks = () => {
   return (
     <div className="text-center">
       <h2 className="f2 f-primary">How It Works</h2>
-      <div className="row my-4 mx-md-2">
+      <div className="row my-md-4 mt-3 mx-2 mx-md-0">
         <div className="col-md-3 mb-md-0 mb-4">
           <div className="hiw-items p-3 shadow-sm">
             <div className="bg-main hiw-nums">1</div>

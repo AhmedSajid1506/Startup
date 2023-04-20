@@ -5,6 +5,7 @@ import wwd3 from "../img/wwd-gfx.png";
 import wwd4 from "../img/wwd-vidEdit.png";
 import wwd5 from "../img/wwd-write.png";
 import wwd6 from "../img/wwd-3d.png";
+import '../css/howitworks.css'
 
 const WhatWeDo = () => {
   return (
@@ -12,7 +13,7 @@ const WhatWeDo = () => {
       <div className="text-center"><h2 className="f2 f-primary">What We Do</h2></div>
       <div className="row bg-white p-3 rounded-4 shadow mb-3">
         <div className="col-md-8">
-          <h2 className="f-primary f2">Web Development</h2>
+          <h3 className="f-primary f2">Web Development</h3>
           <p>We deliver custom web development services that are responsive, user-friendly, visually appealing, and aligned with our client's business goals. </p>
           <ul className="list-unstyled px-3 pt-2">
             <li className="job-items">Front-End Development</li>
@@ -31,7 +32,7 @@ const WhatWeDo = () => {
       </div>
       <div className="row bg-white p-3 rounded-4 shadow mb-3">
         <div className="col-md-8">
-          <h2 className="f-primary f2">Digital Marketing</h2>
+          <h3 className="f-primary f2">Digital Marketing</h3>
           <p>We provide top-notch digital marketing services to boost your online presence and grow your business.</p>
           <ul className="list-unstyled px-3 pt-2">
             <li className="job-items">Social media marketing</li>
@@ -49,7 +50,7 @@ const WhatWeDo = () => {
       </div>
       <div className="row bg-white p-3 rounded-4 shadow mb-3">
         <div className="col-md-8">
-          <h2 className="f-primary f2">Graphic Designing</h2>
+          <h3 className="f-primary f2">Graphic Designing</h3>
           <p>We offer professional graphic designing services to enhance your visual branding and communication.</p>
           <ul className="list-unstyled px-3 pt-2">
             <li className="job-items">Logo Designing</li>
@@ -61,12 +62,12 @@ const WhatWeDo = () => {
           <button type="button" className="mt-3 btn-color py-2 px-3">Packages</button>
         </div>
         <div className="col-md-4 d-flex align-items-center">
-          <img src={wwd3} alt="Graphic Designing Packages" className="w-100" />
+          <img src={wwd3} alt="Graphic Designing Packages" style={{width: "70%"}} />
         </div>
       </div>
       <div className="row bg-white p-3 rounded-4 shadow mb-3">
         <div className="col-md-8">
-          <h2 className="f-primary f2">Video Editing</h2>
+          <h3 className="f-primary f2">Video Editing</h3>
           <p>We offer professional video editing services to enhance and transform your footage.</p>
           <ul className="list-unstyled px-3 pt-2">
             <li className="job-items">Assembly Editing</li>
@@ -79,12 +80,12 @@ const WhatWeDo = () => {
           <button type="button" className="mt-3 btn-color py-2 px-3">Packages</button>
         </div>
         <div className="col-md-4 d-flex align-items-center">
-          <img src={wwd4} alt="Video Editing Packages" className="w-100" />
+          <img src={wwd4} alt="Video Editing Packages" className="w-75" />
         </div>
       </div>
       <div className="row bg-white p-3 rounded-4 shadow mb-3">
         <div className="col-md-8">
-          <h2 className="f-primary f2">Content Writing</h2>
+          <h3 className="f-primary f2">Content Writing</h3>
           <p>We offer professional Content Writing services to meet your specific needs.</p>
           <ul className="list-unstyled px-3 pt-2">
             <li className="job-items">Blog writing</li>
@@ -103,7 +104,7 @@ const WhatWeDo = () => {
       </div>
       <div className="row bg-white p-3 rounded-4 shadow mb-3">
         <div className="col-md-8">
-          <h2 className="f-primary f2">3D Modeling</h2>
+          <h3 className="f-primary f2">3D Modeling</h3>
           <p>We offer professional 3D modeling services for various industries, applications and games.</p>
           <ul className="list-unstyled px-3 pt-2">
             <li className="job-items">Polygonal modeling</li>

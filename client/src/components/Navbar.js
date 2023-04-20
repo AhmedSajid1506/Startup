@@ -9,11 +9,10 @@ const Navbar = () => {
   const { user, getUser } = useUserContext();
 
   useEffect(() => {
-    if (localStorage.getItem('token')) {
+    if (localStorage.getItem("token")) {
       getUser();
     }
-  })
-
+  });
 
   const userDiv = useRef();
   const userIconToggler = () => {
@@ -30,12 +29,14 @@ const Navbar = () => {
   const handleLogout = () => {
     localStorage.clear("token", "email");
     navigate("/login");
-  }
+  };
 
   return (
     <nav className="navbar navbar-expand-lg bg-white sticky-top">
       <div className="container-fluid">
-        <a className="navbar-brand m-0" href="/"><img src={logo} alt="logo" /> All Tasker</a>
+        <a className="navbar-brand m-0" href="/">
+          <img src={logo} alt="logo" /> All Tasker
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -80,9 +81,62 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
-            {/* <hr /> */}
             <div className="d-flex justify-content-between align-items-center me-2">
-              {!localStorage.getItem("token") ? (
+              <i
+                className="fa-regular fa-circle-user fs-2 cursor"
+                alt="userIcon"
+                onClick={userIconToggler}
+              ></i>
+              <div className="userDiv p-3" ref={userDiv}>
+                {!localStorage.getItem("token") ? (
+                  <div>
+                    <NavLink to="./login">
+                      <button
+                        type="button"
+                        className="login-btn w-100 mb-1 py-2"
+                      >
+                        Login
+                      </button>
+                      <br />
+                    </NavLink>
+                    <NavLink to="./signup">
+                      <button type="button" className="signup-btn px-4 py-2">
+                        Signup
+                      </button>
+                    </NavLink>
+                  </div>
+                ) : (
+                  <div>
+                    <div className="d-flex align-items-center fs-14">
+                      <i
+                        className="fa-regular fa-circle-user fs-2 me-2"
+                        alt="userIcon"
+                      ></i>
+                      <div>
+                        <p>{user.first_name + " " + user.last_name}</p>
+                        <p>{user.email}</p>
+                      </div>
+                    </div>
+                    <hr />
+                    <div className="fs-14">
+                      <div className="d-flex align-items-center">
+                        <i className="fa-solid fa-gear me-3"></i>
+                        <p>Profile Settings</p>
+                      </div>
+                    </div>
+                    <hr />
+                    <button
+                      type="button"
+                      className="btn-color px-4 py-2 col-12"
+                      onClick={handleLogout}
+                    >
+                      Logout
+                    </button>
+                  </div>
+                )}
+              </div>
+
+              {/* {!localStorage.getItem("token") ? (
                 <div>
                   <NavLink to="./login">
                     <button type="button" className="login-btn me-3 px-4 py-2">
@@ -125,7 +179,7 @@ const Navbar = () => {
                     </button>
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
           </div>
         </div>

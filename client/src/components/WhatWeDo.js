@@ -106,12 +106,11 @@ const WhatWeDo = () => {
           <h2 className="f-primary f2">3D Modeling</h2>
           <p>We offer professional 3D modeling services for various industries, applications and games.</p>
           <ul className="list-unstyled px-3 pt-2">
-            <li className="job-items">Social </li>
-            <li className="job-items">Search engine optimization (SEO)</li>
-            <li className="job-items">Pay-per-click advertising (PPC)</li>
-            <li className="job-items">Content marketing</li>
-            <li className="job-items">Affiliate marketing</li>
-            <li className="job-items">Email marketing</li>
+            <li className="job-items">Polygonal modeling</li>
+            <li className="job-items">NURBS (Non-Uniform Rational B-Splines) modeling</li>
+            <li className="job-items">Digital sculpting</li>
+            <li className="job-items">Procedural modeling</li>
+            <li className="job-items">Parametric modeling</li>
           </ul>
           <button type="button" className="mt-3 btn-color py-2 px-3">Packages</button>
         </div>

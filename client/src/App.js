@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import { useState, useEffect } from "react";
 import InBuildPopup from "./components/InBuildPopup";
+import Footer from "./components/Footer";
 
 function App() {
   const [showNav, setShowNav] = useState(true);
@@ -32,6 +33,7 @@ function App() {
         <Route path="/addproduct" element={<AddProduct setShowNav={setShowNav} />} />
         <Route path="*" element={<FourOFour setShowNav={setShowNav} />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

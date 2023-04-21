@@ -11,15 +11,7 @@ const Footer = () => {
                     <div class="footer text-white">
                         <h1 className="f2 f-primary">About Us</h1>
                         <p>
-                            This channel is for cooking. This channel helps to cook amazing
-                            recipes simply. This channel also helps you to prepare delicious and
-                            amazing recipes in a fast way. Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Perspiciatis ipsa tempora officiis
-                            sint similique! Repellendus voluptas facilis fugit sapiente harum
-                            laudantium iure animi atque assumenda obcaecati asperiores inventore
-                            explicabo non eligendi vel, dolores nam impedit aliquid quo
-                            distinctio eum nemo velit voluptates. Velit harum ratione, ipsa
-                            tenetur voluptatem ut nam.
+                            At our company, we are a team of versatile professionals who specialize in a range of digital services including web development, digital marketing, graphic designing, video editing, content writing, and 3D modeling. With our diverse skillset and expertise, we are committed to delivering top-quality solutions to help our clients succeed in the digital world.
                         </p>
                     </div>
                     <div>

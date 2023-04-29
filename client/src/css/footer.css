@@ -15,6 +15,26 @@
     width: 180px;
 }
 
+.wrapper .button:nth-child(1) .icon{
+    background: #e62117;
+}
+
+.wrapper .button:nth-child(2) .icon{
+    background: #3b5998;
+}
+
+.wrapper .button:nth-child(3) .icon{
+    background: #d62976;
+}
+
+.wrapper .button:nth-child(4) .icon{
+    background: #55acee;
+}
+
+.wrapper .button:nth-child(5) .icon{
+    background: #000;
+}
+
 .wrapper .button .icon{
     display: inline-block;
     height: 60px;
@@ -28,6 +48,7 @@
 .wrapper .button .icon i{
     font-size: 25px;
     line-height: 60px;
+    color: #fff;
 }
 
 .wrapper .button span{

@@ -1,4 +1,5 @@
 import React from "react";
+import '../css/footer.css';
 
 const Footer = () => {
     return (
@@ -14,7 +15,7 @@ const Footer = () => {
                             At our company, we are a team of versatile professionals who specialize in a range of digital services including web development, digital marketing, graphic designing, video editing, content writing, and 3D modeling. With our diverse skillset and expertise, we are committed to delivering top-quality solutions to help our clients succeed in the digital world.
                         </p>
                     </div>
-                    <div>
+                    {/* <div>
                         <ul class="d-flex p-0">
                             <li class="list-unstyled width-50 mx-2">
                                 <a
@@ -53,6 +54,24 @@ const Footer = () => {
                                 </a>
                             </li>
                         </ul>
+                    </div> */}
+                    <div className="wrapper">
+                        <div className="button">
+                            <div className="icon"><i className="fa-brands fa-youtube"></i></div>
+                            <span>YouTube</span>
+                        </div><div className="button">
+                            <div className="icon"><i className="fa-brands fa-facebook-f"></i></div>
+                            <span>Facebook</span>
+                        </div><div className="button">
+                            <div className="icon"><i className="fa-brands fa-instagram"></i></div>
+                            <span>Instagram</span>
+                        </div><div className="button">
+                            <div className="icon"><i className="fa-brands fa-twitter"></i></div>
+                            <span>Twitter</span>
+                        </div><div className="button">
+                            <div className="icon"><i className="fa-brands fa-tiktok"></i></div>
+                            <span>Tiktok</span>
+                        </div>
                     </div>
                 </div>
                 <div class="quick-links col-md-2 col-12">

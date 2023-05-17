@@ -6,11 +6,11 @@ const Footer = () => {
     return (
         <>
             <div
-                class="d-flex position-relative p-5 justify-content-between flex-wrap"
+                className="d-flex position-relative p-5 justify-content-between flex-wrap"
                 style={{ background: "rgb(64, 64, 64)" }}
             >
-                <div class="d-flex flex-column col-md-9 col-12">
-                    <div class="footer text-white">
+                <div className="d-flex flex-column col-md-9 col-12">
+                    <div className="footer text-white">
                         <h1 className="f2 f-primary">About Us</h1>
                         <p>
                             At our company, we are a team of versatile professionals who specialize in a range of digital services including web development, digital marketing, graphic designing, video editing, content writing, and 3D modeling. With our diverse skillset and expertise, we are committed to delivering top-quality solutions to help our clients succeed in the digital world.
@@ -86,9 +86,9 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div class="quick-links col-md-2 col-12">
+                <div className="quick-links col-md-2 col-12">
                     <h1 className="f2 f-primary">Quick Links</h1>
-                    <ul class="pt-1 list-unstyled">
+                    <ul className="pt-1 list-unstyled">
                         <li>
                             <a className="text-white" href="/">Home</a>
                         </li>
@@ -107,7 +107,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div><p class="text-center p-md-4 p-3 bg-white mb-0">© Copyright 2023 alltasker.co, All Right Reserved.</p></div>
+            <div><p className="text-center p-md-4 p-3 bg-white mb-0">© Copyright 2023 alltasker.co, All Right Reserved.</p></div>
         </>
     );
 };

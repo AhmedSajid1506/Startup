@@ -12,6 +12,7 @@ import Signup from "./pages/Signup";
 import { useState, useEffect } from "react";
 import InBuildPopup from "./components/InBuildPopup";
 import Footer from "./components/Footer";
+import Packages from "./pages/Packages";
 
 function App() {
   const [showNav, setShowNav] = useState(true);
@@ -29,11 +30,14 @@ function App() {
         <Route path="/contact" element={<Contact setShowNav={setShowNav} />} />
         <Route path="/login" element={<Login setShowNav={setShowNav} />} />
         <Route path="/signup" element={<Signup setShowNav={setShowNav} />} />
+
+        <Route path="/packages" element={<Packages setShowNav={setShowNav} />} />
+
         <Route path="/admin" element={<Admin setShowNav={setShowNav} />} />
         <Route path="/addproduct" element={<AddProduct setShowNav={setShowNav} />} />
         <Route path="*" element={<FourOFour setShowNav={setShowNav} />} />
       </Routes>
-      <Footer />
+      {showNav && <Footer />}
     </BrowserRouter>
   );
 }

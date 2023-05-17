@@ -5,7 +5,6 @@ import wwd3 from "../img/wwd-gfx.png";
 import wwd4 from "../img/wwd-vidEdit.png";
 import wwd5 from "../img/wwd-write.png";
 import wwd6 from "../img/wwd-3d.png";
-import '../css/howitworks.css'
 
 const WhatWeDo = () => {
   return (
@@ -26,7 +25,7 @@ const WhatWeDo = () => {
           </ul>
           <button type="button" className="mt-3 btn-color py-2 px-3">Packages</button>
         </div>
-        <div className="col-md-4 d-flex align-items-center">
+        <div className="col-md-4 d-flex align-items-center justify-content-center">
           <img src={wwd1} alt="Web Development Packages" className="w-100" />
         </div>
       </div>
@@ -44,7 +43,7 @@ const WhatWeDo = () => {
           </ul>
           <button type="button" className="mt-3 btn-color py-2 px-3">Packages</button>
         </div>
-        <div className="col-md-4 d-flex align-items-center">
+        <div className="col-md-4 d-flex align-items-center justify-content-center">
           <img src={wwd2} alt="Digital Marketing Packages" className="w-100" />
         </div>
       </div>
@@ -61,7 +60,7 @@ const WhatWeDo = () => {
           </ul>
           <button type="button" className="mt-3 btn-color py-2 px-3">Packages</button>
         </div>
-        <div className="col-md-4 d-flex align-items-center">
+        <div className="col-md-4 d-flex align-items-center justify-content-center">
           <img src={wwd3} alt="Graphic Designing Packages" style={{width: "70%"}} />
         </div>
       </div>
@@ -79,7 +78,7 @@ const WhatWeDo = () => {
           </ul>
           <button type="button" className="mt-3 btn-color py-2 px-3">Packages</button>
         </div>
-        <div className="col-md-4 d-flex align-items-center">
+        <div className="col-md-4 d-flex align-items-center justify-content-center">
           <img src={wwd4} alt="Video Editing Packages" className="w-75" />
         </div>
       </div>
@@ -98,7 +97,7 @@ const WhatWeDo = () => {
           </ul>
           <button type="button" className="mt-3 btn-color py-2 px-3">Packages</button>
         </div>
-        <div className="col-md-4 d-flex align-items-center">
+        <div className="col-md-4 d-flex align-items-center justify-content-center">
           <img src={wwd5} alt="Content Writing Packages" className="w-100" />
         </div>
       </div>
@@ -115,7 +114,7 @@ const WhatWeDo = () => {
           </ul>
           <button type="button" className="mt-3 btn-color py-2 px-3">Packages</button>
         </div>
-        <div className="col-md-4 d-flex align-items-center">
+        <div className="col-md-4 d-flex align-items-center justify-content-center">
           <img src={wwd6} alt="3D Modeling Packages" className="w-100" />
         </div>
       </div>

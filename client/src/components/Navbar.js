@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useUserContext } from "../context/userContext";
-import logo from "../img/logo.png";
+import logo from "../img/logo2.png";
 import "../css/nav.css";
 
 const Navbar = () => {
@@ -34,8 +34,8 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-white sticky-top shadow">
       <div className="container-fluid">
-        <a className="navbar-brand m-0" href="/">
-          <img src={logo} alt="logo" /> All Tasker
+        <a className="navbar-brand m-0 p-0 ms-2" href="/">
+          <img src={logo} alt="logo" />
         </a>
         <button
           className="navbar-toggler"

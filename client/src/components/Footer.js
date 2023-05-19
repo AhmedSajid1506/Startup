@@ -18,24 +18,6 @@ const Footer = () => {
                     </div>
 
                     {/* Social Icons */}
-                    {/* <div className="wrapper">
-                        <div className="button">
-                            <div className="icon"><i className="fa-brands fa-youtube"></i></div>
-                            <span>YouTube</span>
-                        </div><div className="button">
-                            <div className="icon"><i className="fa-brands fa-facebook-f"></i></div>
-                            <span>Facebook</span>
-                        </div><div className="button">
-                            <div className="icon"><i className="fa-brands fa-instagram"></i></div>
-                            <span>Instagram</span>
-                        </div><div className="button">
-                            <div className="icon"><i className="fa-brands fa-twitter"></i></div>
-                            <span>Twitter</span>
-                        </div><div className="button">
-                            <div className="icon"><i className="fa-brands fa-tiktok"></i></div>
-                            <span>Tiktok</span>
-                        </div>
-                    </div> */}
                     <div className="mt-3">
                         <ul className="social-icons">
                             <li>

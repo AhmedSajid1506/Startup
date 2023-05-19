@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.063eadd2.css",
-    "main.js": "/static/js/main.f74ec0cf.js",
+    "main.css": "/static/css/main.2ae7dfd5.css",
+    "main.js": "/static/js/main.5e07b522.js",
     "static/js/787.e578f307.chunk.js": "/static/js/787.e578f307.chunk.js",
     "static/media/carousel2.png": "/static/media/carousel2.8bb59db9185f4edaf45d.png",
     "static/media/carousel3.jpg": "/static/media/carousel3.800e3caf880b4b02711e.jpg",
@@ -22,12 +22,12 @@
     "static/media/wwd-digiMart.png": "/static/media/wwd-digiMart.75e4446d3a4930e6d76d.png",
     "static/media/hiw-third.png": "/static/media/hiw-third.43340d157dce98f52584.png",
     "index.html": "/index.html",
-    "main.063eadd2.css.map": "/static/css/main.063eadd2.css.map",
-    "main.f74ec0cf.js.map": "/static/js/main.f74ec0cf.js.map",
+    "main.2ae7dfd5.css.map": "/static/css/main.2ae7dfd5.css.map",
+    "main.5e07b522.js.map": "/static/js/main.5e07b522.js.map",
     "787.e578f307.chunk.js.map": "/static/js/787.e578f307.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.063eadd2.css",
-    "static/js/main.f74ec0cf.js"
+    "static/css/main.2ae7dfd5.css",
+    "static/js/main.5e07b522.js"
   ]
 }

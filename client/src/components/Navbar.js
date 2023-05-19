@@ -32,7 +32,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-white sticky-top">
+    <nav className="navbar navbar-expand-lg bg-white sticky-top shadow">
       <div className="container-fluid">
         <a className="navbar-brand m-0" href="/">
           <img src={logo} alt="logo" /> All Tasker

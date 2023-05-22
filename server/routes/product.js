@@ -3,7 +3,7 @@ const router = express.Router();
 const Product = require("../models/Product");
 const fetchuser = require("../middleware/fetchuser");
 
-// ROUTE: 1; Get loggedin user details using GET "/api/v1/product/fetchallproduct". login required.
+// ROUTE: 1; Get loggedin user details using GET "/api/v1/product/fetchallproduct".
 router.get("/fetchallproduct", async (req, res) => {
   try {
     const product = await Product.find(req.id);

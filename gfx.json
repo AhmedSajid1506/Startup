@@ -1,0 +1,21 @@
+{
+  "gfx": {
+    "logo": {
+      "silver": {
+        "designs": "3 unique",
+        "res": "low-res",
+        "delivery": "1 day"
+      },
+      "gold": {
+        "designs": "5 unique",
+        "res": "normal-res",
+        "delivery": "2 day"
+      },
+      "diamond": {
+        "designs": "10 unique",
+        "res": "high-res",
+        "delivery": "3 day"
+      }
+    }
+  }
+}

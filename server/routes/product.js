@@ -63,7 +63,7 @@ router.put("/updateproduct/:id", fetchuser, async (req, res) => {
     }
 
     // Find the product to be updated and update it
-    let product = await product.findById(req.params.id);
+    let product = await Product.findById(req.params.id);
     if (!product) {
       return res.status(404).send("Page Not Found");
     }
@@ -87,7 +87,7 @@ router.put("/updateproduct/:id", fetchuser, async (req, res) => {
 router.delete("/deleteproduct/:id", fetchuser, async (req, res) => {
   try {
     // Find the product to be delete and delete it
-    let product = await product.findById(req.params.id);
+    let product = await Product.findById(req.params.id);
     if (!product) {
       return res.status(404).send("Page Not Found");
     }
@@ -108,7 +108,7 @@ router.delete("/deleteproduct/:id", fetchuser, async (req, res) => {
 // ROUTE: 5; Get product by id using GET "/api/v1/product/fetchrecipe/:id".
 router.get("/fetchproduct/:id", async (req, res) => {
   try {
-    const product = await product.findById(req.params.id);
+    const product = await Product.findById(req.params.id);
     res.json(product);
   } catch (error) {
     console.error(error.message);
@@ -119,7 +119,7 @@ router.get("/fetchproduct/:id", async (req, res) => {
 // ROUTE: 6; Get product by tags using GET "/api/v1/product/fetchbytags".
 router.get("/fetchbytags/:id", async (req, res) => {
   try {
-    const product = await product.findById(req.params.id);
+    const product = await Product.findById(req.params.id);
     const producttags = product.tags[0];
     const producttagsfind = await product.find({tags: { $elemMatch: { $in: producttags } }, _id: { $ne: req.params.id }});
     res.json(producttagsfind);
@@ -132,7 +132,7 @@ router.get("/fetchbytags/:id", async (req, res) => {
 // ROUTE: 7; Get product by tags for search using GET "/api/v1/product/search/:key".
 router.get("/search/:key", async (req, res) => {
   try {
-    const product = await product.find({tags: { $elemMatch: { $in: req.params.key } }});
+    const product = await Product.find({tags: { $elemMatch: { $in: req.params.key } }});
     res.json(product);
   } catch (error) {
     console.error(error.message);
@@ -143,7 +143,7 @@ router.get("/search/:key", async (req, res) => {
 // ROUTE: 8; Get product by date using GET "/api/v1/product/latest".
 router.get("/latest", async (req, res) => {
   try {
-    const product = await product.find(req.id).sort({_id: -1}).limit(8);
+    const product = await Product.find(req.id).sort({_id: -1}).limit(8);
     res.json(product);
   } catch (error) {
     console.error(error.message);

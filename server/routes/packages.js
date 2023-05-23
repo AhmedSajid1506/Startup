@@ -2,11 +2,12 @@ const express = require("express");
 const Packages = require("../models/Packages");
 const router = express.Router();
 
-// ROUTE: 7; Get product by tags for search using GET "/api/v1/product/search/:key".
-router.get("/:mctg/:ctg", async (req, res) => {
+// ROUTE: 1; Get package by url using GET "/api/v1/packages/:ctg".
+router.get("/:ctg", async (req, res) => {
   try {
-    console.log("done", req.params.mctg, req.params.ctg);
-    const packages = await Packages.find(req.id);
+    console.log("done", req.params.ctg);
+    const ctg = req.params.ctg;
+    const packages = await Packages.find({$eq: req.params.ctg});
     res.json(packages);
   } catch (error) {
     console.error(error.message);

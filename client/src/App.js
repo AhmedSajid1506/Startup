@@ -31,7 +31,7 @@ function App() {
         <Route path="/login" element={<Login setShowNav={setShowNav} />} />
         <Route path="/signup" element={<Signup setShowNav={setShowNav} />} />
 
-        <Route path="/packages" element={<Packages setShowNav={setShowNav} />} />
+        <Route path="/packages/:ctg" element={<Packages setShowNav={setShowNav} />} />
 
         <Route path="/admin" element={<Admin setShowNav={setShowNav} />} />
         <Route path="/addproduct" element={<AddProduct setShowNav={setShowNav} />} />

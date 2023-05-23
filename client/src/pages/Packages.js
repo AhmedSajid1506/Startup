@@ -1,6 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Packages = () => {
+
+  const packageCtg = decodeURI(window.location.pathname.split('/').pop());
+
+  const getPackage = async () => {
+  const res = await fetch(`http://localhost:6001/api/v1/packages/${packageCtg}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+    const json = await res.json();
+    setPack(json);
+  }
+
+  const packInitial = []
+  const [pack, setPack] = useState(packInitial)
+
+  useEffect(() => {
+    getPackage();
+    const [packs] = pack;
+  })
+  
 
   return (
     <div className="container">
@@ -19,12 +41,12 @@ const Packages = () => {
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">3 unique designs</li>
                 <li className="list-group-item">High-resolution files</li>
-                <li className="list-group-item">24-hour delivery</li>
-                {/* {
-                  gfx.map((data) =>
-                    <li className="list-group-item">{data.logo}</li>
+                <li className="list-group-item">{packs.ctg}</li>
+                {
+                  pack.map((data) =>
+                    <li className="list-group-item" key={data.id}>{data.logo}</li>
                   )
-                } */}
+                }
               </ul>
             </div>
             <div className="card-footer text-center">

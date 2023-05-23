@@ -15,7 +15,7 @@ const UserProvider = ({ children }) => {
         "token": localStorage.getItem('token')
       }
     })
-    const json = await res.json();    
+    const json = await res.json();
     setUser(json);
   }
 

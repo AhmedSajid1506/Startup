@@ -1,5 +1,6 @@
 {
-  "logo": {
+  {
+  "ctg": "logo",
     "silver": {
       "designs": "3 unique",
       "res": "low-res",
@@ -15,8 +16,9 @@
       "res": "high-res",
       "delivery": "3 day"
     }
-  },
-  "Mockups": {
+  
+  "ctg": "mockups",
+  "mockups": {
     "silver": {
       "designs": "unique",
       "res": "low",

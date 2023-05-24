@@ -1,22 +1,20 @@
 {
-  {
   "ctg": "logo",
-    "silver": {
-      "designs": "3 unique",
-      "res": "low-res",
-      "delivery": "1 day"
-    },
-    "gold": {
-      "designs": "5 unique",
-      "res": "normal-res",
-      "delivery": "2 day"
-    },
-    "diamond": {
-      "designs": "10 unique",
-      "res": "high-res",
-      "delivery": "3 day"
-    }
-  
+  "silver": {
+    "designs": "3 unique",
+    "res": "low-res",
+    "delivery": "1 day"
+  },
+  "gold": {
+    "designs": "5 unique",
+    "res": "normal-res",
+    "delivery": "2 day"
+  },
+  "diamond": {
+    "designs": "10 unique",
+    "res": "high-res",
+    "delivery": "3 day"
+  },
   "ctg": "mockups",
   "mockups": {
     "silver": {
@@ -34,5 +32,10 @@
       "res": "high",
       "delivery": "15 day"
     }
-  }
+  },
+  "ctg": "logo-design",
+  "column1": ["Concepts Included", "Logo Transparency", "Vector File", "Printable File", "3D Mockup", "Source File", "Delivery Time", "Revisions", "Total"],
+  "silver": ["1", "check", "xmark", "check", "xmark", "xmark", "3 Days", "3", "$12 / PKR 3,450"],
+  "gold": ["3", "check", "check", "check", "xmark", "check", "2 Days", "5", "$35 / PKR 10,000"],
+  "diamond": ["5", "check", "check", "check", "check", "check", "3 Days", "Unlimited", "$100 / PKR 28,700"]
 }

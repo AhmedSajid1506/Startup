@@ -24,8 +24,8 @@ const Packages = () => {
     getPackage();
     if (pack) {
       let lastItem = pack.silver.length-1;
-      lastItem += `<button>Order</button>`;
-      console.log(lastItem);
+      pack.silver[lastItem] += `<button>Order</button>`;
+      console.log(pack.silver[lastItem] += `<button>Order</button>`);
     }
   });
 

@@ -96,3 +96,22 @@ a{
 .cursor{
   cursor: pointer;
 }
+
+/* Packages */
+.mobPackageActive{
+  position: relative;
+  background: #fff;
+  z-index: 999;
+}
+
+.mobPackageActive::before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  bottom: -7px;
+  transform: rotate(45deg);
+  border-radius: 5px;
+  /* z-index: 1; */
+}

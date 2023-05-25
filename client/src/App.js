@@ -10,7 +10,6 @@ import AddProduct from "./pages/AddProduct";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import { useState, useEffect } from "react";
-import InBuildPopup from "./components/InBuildPopup";
 import Footer from "./components/Footer";
 import Packages from "./pages/Packages";
 
@@ -23,7 +22,6 @@ function App() {
   return (
     <BrowserRouter>
         {showNav && <Navbar />}
-        <InBuildPopup />
       <Routes>
         <Route path="/" element={<Home setShowNav={setShowNav} />} />
         <Route path="/about" element={<About setShowNav={setShowNav} />} />

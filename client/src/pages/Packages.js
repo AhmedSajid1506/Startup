@@ -22,17 +22,17 @@ const Packages = () => {
 
   useEffect(() => {
     getPackage();
-    if (pack) {
-      let lastItem = pack.silver.length-1;
-      pack.silver[lastItem] += `<button>Order</button>`;
-      console.log(pack.silver[lastItem] += `<button>Order</button>`);
-    }
+    // if (pack) {
+    //   let lastItem = pack.silver.length - 1;
+    //   pack.silver[lastItem] += `<button>Order</button>`;
+    //   console.log(pack.silver[lastItem] += `<button>Order</button>`);
+    // }
   });
 
   return (
-    <div className="container my-4">
-      <h1 className="text-center mb-3">Logo Designing Packages</h1>
-      <div className="row">
+    <div className="container my-4 bg-white rounded-4 pt-3">
+      <h1 className="text-center mb-3"><span className="f-primary">Logo Designing</span>Packages</h1>
+      {/* <div className="row">
         <div className="col-3 border px-5 py-2 fs-5">Package</div>
         <div className="col-3 border px-5 py-2 fs-5 text-center fw-bold">
           <i className="fa-solid fa-gem" style={{ color: "#c0c0c0" }}></i>Silver
@@ -114,78 +114,49 @@ const Packages = () => {
               )
             )}
         </div>
-      </div>
-
-      {/* <div className="row">
-        <div className="col-md-4">
-          <div className="card mb-4">
-            <div className="card-header">
-              <h5 className="card-title">
-                <i className="fa-solid fa-gem" style={{ color: "#c0c0c0" }}></i>{" "}
-                Silver Package
-              </h5>
-            </div>
-            <div className="card-body">
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item">3 unique designs</li>
-                <li className="list-group-item">High-resolution files</li>
-                {pack && <li className="list-group-item">{pack.ctg}</li>}
-                {pack &&
-                  pack.silver.map((data, index) => (
-                    <li className="list-group-item" key={index}>
-                      {data}
-                    </li>
-                  ))}
-              </ul>
-            </div>
-            <div className="card-footer text-center">
-              <button className="btn btn-primary">Order Now</button>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-md-4">
-          <div className="card mb-4">
-            <div className="card-header">
-              <h5 className="card-title">
-                <i className="fa-solid fa-gem" style={{ color: "#ffd700" }}></i>{" "}
-                Gold Package
-              </h5>
-            </div>
-            <div className="card-body">
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item">5 unique designs</li>
-                <li className="list-group-item">Source files included</li>
-                <li className="list-group-item">48-hour delivery</li>
-              </ul>
-            </div>
-            <div className="card-footer text-center">
-              <button className="btn btn-primary">Order Now</button>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-md-4">
-          <div className="card mb-4">
-            <div className="card-header">
-              <h5 className="card-title">
-                <i className="fa-solid fa-gem" style={{ color: "#b9f2ff" }}></i>{" "}
-                Diamond Package
-              </h5>
-            </div>
-            <div className="card-body">
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item">10 unique designs</li>
-                <li className="list-group-item">Source files included</li>
-                <li className="list-group-item">Customized revisions</li>
-              </ul>
-            </div>
-            <div className="card-footer text-center">
-              <button className="btn btn-primary">Order Now</button>
-            </div>
-          </div>
-        </div>
       </div> */}
+
+      <div className="row">
+        <div className="col-4 text-center p-2 border cursor">
+          <i className="fa-solid fa-gem" style={{ color: "#c0c0c0" }}></i>Silver
+        </div>
+        <div className="col-4 text-center p-2 border cursor">
+          <i className="fa-solid fa-gem" style={{ color: "#ffd700" }}></i>Gold
+        </div>
+        <div className="col-4 text-center p-2 border cursor">
+          <i className="fa-solid fa-gem" style={{ color: "#b9f2ff" }}></i>Diamond
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-9 p-0 d-flex flex-column">
+          {pack &&
+            pack.column1.map((data, index) => (
+              <p className="border-bottom px-5 py-2" key={index}>
+                {data}
+              </p>
+            ))}
+        </div>
+        <div className="col-3 p-0 d-flex flex-column">
+          {pack &&
+            pack.silver.map((data, index) =>
+              data === "check" ? (
+                <i
+                  className="fa-solid fa-check border-bottom fs-4 py-2 text-success"
+                  key={index}
+                ></i>
+              ) : data === "xmark" ? (
+                <i
+                  className="fa-solid fa-xmark border-bottom fs-4 py-2 text-danger"
+                  key={index}
+                ></i>
+              ) : (
+                <p className="border-bottom py-2" key={index}>
+                  {data}
+                </p>
+              )
+            )}
+        </div>
+      </div>
     </div>
   );
 };

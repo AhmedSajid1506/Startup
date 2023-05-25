@@ -128,15 +128,15 @@ const Packages = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col-9 p-0 d-flex flex-column">
+        <div className="col-7 p-0 d-flex flex-column">
           {pack &&
             pack.column1.map((data, index) => (
-              <p className="border-bottom px-5 py-2" key={index}>
-                {data}
+              <p className="border-bottom px-3 py-2" key={index}>
+                {data}{":"}
               </p>
             ))}
         </div>
-        <div className="col-3 p-0 d-flex flex-column">
+        <div className="col-4 p-0 d-flex flex-column">
           {pack &&
             pack.silver.map((data, index) =>
               data === "check" ? (

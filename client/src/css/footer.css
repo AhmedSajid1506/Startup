@@ -1,75 +1,9 @@
-/* .wrapper .button{
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    margin: 0 5px;
-    background: #fff;
-    border-color: #000;
-    overflow: hidden;
-    border-radius: 100px;
-    cursor: pointer;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-out;
-}
-
-.wrapper .button:hover{
-    width: 150px;
-}
-
-.wrapper .button:nth-child(1) .icon{
-    background: #e62117;
-    border-radius: 0px;
-}
-
-.wrapper .button:nth-child(2) .icon{
-    background: #3b5998;
-    border-radius: 0px;
-}
-
-.wrapper .button:nth-child(3) .icon{
-    background: #d62976;
-    border-radius: 0px;
-
-}
-
-.wrapper .button:nth-child(4) .icon{
-    background: #55acee;
-    border-radius: 0px;
-}
-
-.wrapper .button:nth-child(5) .icon{
-    background: #000;
-    border-radius: 0px;
-}
-
-.wrapper .button .icon{
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    text-align: center;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 60px;
-}
-
-.wrapper .button .icon i{
-    font-size: 25px;
-    line-height: 60px;
-    color: #fff;
-}
-
-.wrapper .button span{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 60px;
-} */
-
 .social-icons{
     position: relative;
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .social-icons li{
@@ -77,7 +11,6 @@
     list-style: none;
     width: 60px;
     height: 60px;
-    margin: 0 20px;
     background: #404040;
 }
 

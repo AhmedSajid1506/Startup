@@ -20,7 +20,7 @@ const Footer = () => {
                     {/* Social Icons */}
                     <div className="mt-3">
                         <ul className="social-icons">
-                            <li>
+                            <li className="m-2 m-md-3">
                                 <NavLink to="#">
                                     <span></span>
                                     <span></span>
@@ -29,7 +29,7 @@ const Footer = () => {
                                     <span className="fa-brands fa-youtube"></span>
                                 </NavLink>
                             </li>
-                            <li>
+                            <li className="m-2 m-md-3">
                                 <NavLink to="#">
                                     <span></span>
                                     <span></span>
@@ -38,7 +38,7 @@ const Footer = () => {
                                     <span className="fa-brands fa-facebook-f"></span>
                                 </NavLink>
                             </li>
-                            <li>
+                            <li className="m-2 m-md-3">
                                 <NavLink to="#">
                                     <span></span>
                                     <span></span>
@@ -47,7 +47,7 @@ const Footer = () => {
                                     <span className="fa-brands fa-instagram"></span>
                                 </NavLink>
                             </li>
-                            <li>
+                            <li className="m-2 m-md-3">
                                 <NavLink to="#">
                                     <span></span>
                                     <span></span>
@@ -56,7 +56,7 @@ const Footer = () => {
                                     <span className="fa-brands fa-twitter"></span>
                                 </NavLink>
                             </li>
-                            <li>
+                            <li className="m-2 m-md-3">
                                 <NavLink to="#">
                                     <span></span>
                                     <span></span>

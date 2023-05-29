@@ -19,7 +19,6 @@ const Packages = () => {
   };
 
   const [pack, setPack] = useState(null);
-  const [showPack, setshowPack] = useState([]);
   const [mobCheck, setMobCheck] = useState(null);
 
   const mobileChecker = () => {
@@ -47,60 +46,198 @@ const Packages = () => {
           <h1 className="text-center mb-3">
             <span className="f-primary">Logo Designing </span>Packages
           </h1>
-          <div className="row">
-            <div
-              className="col-4 d-flex justify-content-center align-items-center fw-bold fs-5 mobPackageActive py-2 border cursor"
-              onClick={() => {
-                setshowPack("silver");
-              }}
-            >
+          {/* <div className="row">
+            <div className="col-12 border px-5 py-2 fs-5 text-center fw-bold">
               <i className="fa-solid fa-gem" style={{ color: "#c0c0c0" }}></i>
               Silver
             </div>
-            <div
-              className="col-4 d-flex justify-content-center align-items-center fw-bold fs-5 py-2 border cursor bg-main"
-              onClick={() => {
-                setshowPack("gold");
-              }}
-            >
+            <div className="col-6 d-flex flex-column p-0">
+              {pack &&
+                pack.column1.map((data, i) => (
+                  <p className="border p-2" key={i}>
+                    {data}
+                  </p>
+                ))}
+            </div>
+            <div className="col-6 d-flex flex-column text-center p-0">
+              {pack &&
+                pack.silver.map((data, i) =>
+                  data === "check" ? (
+                    <i
+                      className="fa-solid fa-check border fs-4 text-success"
+                      key={i} style={{padding: ".575rem 0"}}
+                    ></i>
+                  ) : data === "xmark" ? (
+                    <i
+                      className="fa-solid fa-xmark border fs-4 text-danger"
+                      key={i} style={{padding: ".575rem 0"}}
+                    ></i>
+                  ) : (
+                    <p className="border p-2" key={i}>
+                      {data}
+                    </p>
+                  )
+                )}
+            </div>
+          </div><div className="row">
+            <div className="col-12 border px-5 py-2 fs-5 text-center fw-bold">
               <i className="fa-solid fa-gem" style={{ color: "#ffd700" }}></i>
               Gold
             </div>
-            <div
-              className="col-4 d-flex justify-content-center align-items-center fw-bold fs-5 py-2 border cursor bg-main"
-              onClick={() => {
-                setshowPack("diamond");
-              }}
-            >
+            <div className="col-6 d-flex flex-column p-0">
+              {pack &&
+                pack.column1.map((data, i) => (
+                  <p className="border p-2" key={i}>
+                    {data}
+                  </p>
+                ))}
+            </div>
+            <div className="col-6 d-flex flex-column text-center p-0">
+              {pack &&
+                pack.gold.map((data, i) =>
+                  data === "check" ? (
+                    <i
+                      className="fa-solid fa-check border fs-4 text-success"
+                      key={i} style={{padding: ".575rem 0"}}
+                    ></i>
+                  ) : data === "xmark" ? (
+                    <i
+                      className="fa-solid fa-xmark border fs-4 text-danger"
+                      key={i} style={{padding: ".575rem 0"}}
+                    ></i>
+                  ) : (
+                    <p className="border p-2" key={i}>
+                      {data}
+                    </p>
+                  )
+                )}
+            </div>
+          </div><div className="row">
+            <div className="col-12 border px-5 py-2 fs-5 text-center fw-bold">
               <i className="fa-solid fa-gem" style={{ color: "#b9f2ff" }}></i>
               Diamond
             </div>
+            <div className="col-6 d-flex flex-column p-0">
+              {pack &&
+                pack.column1.map((data, i) => (
+                  <p className="border p-2" key={i}>
+                    {data}
+                  </p>
+                ))}
+            </div>
+            <div className="col-6 d-flex flex-column text-center p-0">
+              {pack &&
+                pack.diamond.map((data, i) =>
+                  data === "check" ? (
+                    <i
+                      className="fa-solid fa-check border fs-4 text-success"
+                      key={i} style={{padding: ".575rem 0"}}
+                    ></i>
+                  ) : data === "xmark" ? (
+                    <i
+                      className="fa-solid fa-xmark border fs-4 text-danger"
+                      key={i} style={{padding: ".575rem 0"}}
+                    ></i>
+                  ) : (
+                    <p className="border p-2" key={i}>
+                      {data}
+                    </p>
+                  )
+                )}
+            </div>
+          </div> */}
+          <div className="row">
+            <div className="col-12 border px-5 py-2 fs-5 text-center fw-bold">
+              <i className="fa-solid fa-gem" style={{ color: "#c0c0c0" }}></i>
+              Silver
+            </div>
+            <div className="col-12 d-flex flex-column p-0">
+              {pack &&
+                pack.column1.map((data, i) => (
+                  pack.silver[i] === "check" ? (
+                    <p className="border p-2">
+                      <i
+                        className="fa-solid fa-check fs-4 text-success pe-2"
+                        key={i}
+                      ></i>{data}
+                    </p>
+                  ) : pack.silver[i] === "xmark" ? (
+                    <p className="border p-2">
+                      <i
+                        className="fa-solid fa-xmark fs-4 text-danger pe-2"
+                        key={i}
+                      ></i>{data}
+                    </p>
+
+                  ) : (
+                    <p className="border p-2" key={i}>
+                      {pack.silver[i]} {data}
+                    </p>
+                  )
+                ))}
+            </div>
           </div>
-          <div className="col-12 p-0 d-flex flex-column">
-            {showPack &&
-              pack.column1.map((data, i) =>
-                pack.showPack[i] === "check" ? (
-                  <p
-                    className="border-bottom py-2 d-flex align-items-center"
-                    key={i}
-                  >
-                    <i className="fa-solid fa-check fs-4 text-success me-2"></i>
-                    {data}
-                  </p>
-                ) : pack.showPack[i] === "xmark" ? (
-                  <p
-                    className="border-bottom py-2 d-flex align-items-center"
-                    key={i}
-                  >
-                    <i className="fa-solid fa-xmark fs-4 text-danger me-2"></i>
-                    {data}
-                  </p>
-                ) : (
-                  <p className="border-bottom py-2" key={i}>
-                    {pack.showPack[i]} {data}
-                  </p>
-                )
-              )}
+          <div className="row">
+            <div className="col-12 border px-5 py-2 fs-5 text-center fw-bold">
+              <i className="fa-solid fa-gem" style={{ color: "#ffd700" }}></i>
+              Gold
+            </div>
+            <div className="col-12 d-flex flex-column p-0">
+              {pack &&
+                pack.column1.map((data, i) => (
+                  pack.gold[i] === "check" ? (
+                    <p className="border p-2">
+                      <i
+                        className="fa-solid fa-check fs-4 text-success pe-2"
+                        key={i}
+                      ></i>{data}
+                    </p>
+                  ) : pack.gold[i] === "xmark" ? (
+                    <p className="border p-2">
+                      <i
+                        className="fa-solid fa-xmark fs-4 text-danger pe-2"
+                        key={i}
+                      ></i>{data}
+                    </p>
+
+                  ) : (
+                    <p className="border p-2" key={i}>
+                      {pack.gold[i]} {data}
+                    </p>
+                  )
+                ))}
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12 border px-5 py-2 fs-5 text-center fw-bold">
+              <i className="fa-solid fa-gem" style={{ color: "#b9f2ff" }}></i>
+              Diamond
+            </div>
+            <div className="col-12 d-flex flex-column p-0">
+              {pack &&
+                pack.column1.map((data, i) => (
+                  pack.diamond[i] === "check" ? (
+                    <p className="border p-2">
+                      <i
+                        className="fa-solid fa-check fs-4 text-success pe-2"
+                        key={i}
+                      ></i>{data}
+                    </p>
+                  ) : pack.diamond[i] === "xmark" ? (
+                    <p className="border p-2">
+                      <i
+                        className="fa-solid fa-xmark fs-4 text-danger pe-2"
+                        key={i}
+                      ></i>{data}
+                    </p>
+
+                  ) : (
+                    <p className="border p-2" key={i}>
+                      {pack.diamond[i]} {data}
+                    </p>
+                  )
+                ))}
+            </div>
           </div>
         </div>
       ) : (
